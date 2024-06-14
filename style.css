@@ -4,18 +4,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('background.jpg'); /* Путь к вашей картинке */
-    background-size: cover;
-    background-position: center;
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    position: relative;
 }
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для удобства чтения */
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .counter {
@@ -75,16 +69,4 @@ body {
         font-size: 1em;
         padding: 6px 12px;
     }
-}
-
-/* Версия */
-.version {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 1em;
-    color: white;
-    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
-    padding: 5px 10px;
-    border-radius: 5px;
 }
