@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.counter {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.click-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.click-button:active {
+    transform: scale(0.9);
+}
+
+.bounce {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .counter {
+        font-size: 2.5em;
+    }
+
+    .click-button {
+        font-size: 1.2em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .counter {
+        font-size: 2em;
+    }
+
+    .click-button {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+}
